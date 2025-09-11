@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Comparación de Métodos de Fetch
 
-## Getting Started
+Una aplicación Next.js que demuestra las diferencias entre dos enfoques para obtener datos en React: **useEffect tradicional** vs **SWR**.
 
-First, run the development server:
+## 🚀 Características
+
+- **Comparación visual** de dos métodos de fetch
+- **useEffect + useState**: Control manual del estado
+- **SWR**: Caché automático y revalidación inteligente
+- **UI moderna** con paleta de colores ecológica
+- **Responsive design** optimizado para móviles
+- **Código limpio** con CSS separado de componentes
+
+## 🛠️ Tecnologías
+
+- **Next.js 14** - Framework de React
+- **SWR** - Data fetching con caché
+- **CSS puro** - Sin frameworks CSS
+- **React Hooks** - useState, useEffect
+
+## 📦 Instalación
 
 ```bash
+# Instalar dependencias
+npm install
+
+# Ejecutar en desarrollo
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Construir para producción
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎯 Uso
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+1. Ejecuta `npm run dev`
+2. Abre [http://localhost:3000](http://localhost:3000)
+3. Compara ambos métodos de fetch en tiempo real
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📁 Estructura
 
-## Learn More
+```
+src/
+├── app/
+│   ├── styles/globals.css  # Estilos globales
+│   ├── layout.js           # Layout principal
+│   └── page.js             # Página principal
+└── components/
+    ├── GetUser.js          # Componente useEffect
+    └── GetUserSWR.js       # Componente SWR
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 🔍 Diferencias Clave
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| useEffect       | SWR                  |
+| --------------- | -------------------- |
+| Control manual  | Caché automático     |
+| Re-fetch manual | Revalidación en foco |
+| Más código      | Menos boilerplate    |
+| Sin caché       | Caché inteligente    |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🎨 Paleta de Colores
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Verde**: `#2d5a27` (useEffect)
+- **Marrón**: `#8b4513` (SWR)
+- **Modo oscuro** compatible
