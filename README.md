@@ -2,6 +2,8 @@
 
 Una aplicación Next.js que demuestra las diferencias entre dos enfoques para obtener datos en React: **useEffect tradicional** vs **SWR**.
 
+![Demo](https://raw.githubusercontent.com/urian121/imagenes-proyectos-github/refs/heads/master/comparacion-swr-vs-usestate-useeffect-data-fetching.gif)
+
 ## 🚀 Características
 
 - **Comparación visual** de dos métodos de fetch
